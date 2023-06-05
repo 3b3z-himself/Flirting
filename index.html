@@ -45,7 +45,7 @@
 </head>
 <body>
     <h1>Gaming Together? 🥵😔</h1>
-    <a href="/yes.html"><button id="yesButton" class="button">Yes</button></a>
+    <button onclick="redirectToYesPage()" id="yesButton" class="button">Yes</button>
     <button id="noButton" class="button">No</button>
 
     <script>
@@ -59,10 +59,10 @@
             noButton.style.left = `${randomX}px`;
             noButton.style.top = `${randomY}px`;
         });
+        function redirectToYesPage() {
+  window.location.href = "/yes.html";
+}
 
-
-
-        
     </script>
 </body>
 </html>
