@@ -44,9 +44,17 @@
     </style>
 </head>
 <body>
+    <div class="myDIV">
     <h1>Gaming Together? 🥵😔</h1>
-    <button onclick="redirectToYesPage()" id="yesButton" class="button">Yes</button>
+    <button onclick="hideMyDIV()" id="yesButton" class="button">Yes</button>
     <button id="noButton" class="button">No</button>
+</div>
+
+<main style="display: none;">
+    <img src="https://media.tenor.com/I4d1QyAghmUAAAAM/hooray-letsgo.gif" alt="">
+    <h2>MEET ME AFTER 1:00 AM 🥵</h2>
+    <p>Sounds creepy, but we actually play at that time.</p>
+</main>
 
     <script>
         const noButton = document.getElementById('noButton');
@@ -62,7 +70,14 @@
         function redirectToYesPage() {
   window.location.href = "/yes.html";
 }
-
+function hideMyDIV() {
+  var myDIV = document.querySelector('.myDIV');
+  var main = document.querySelector('main');
+  
+  myDIV.style.display = 'none';
+  main.style.display = 'block';
+}
     </script>
+
 </body>
 </html>
