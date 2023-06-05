@@ -37,11 +37,15 @@
         .button:hover {
             background-color: #1c5de9;
         }
+        #noButton
+        {
+            transition: 0.5s ease-in-out;
+        }
     </style>
 </head>
 <body>
     <h1>Gaming Together? 🥵😔</h1>
-    <button id="yesButton" class="button">Yes</button>
+    <a href="/yes.html"><button id="yesButton" class="button">Yes</button></a>
     <button id="noButton" class="button">No</button>
 
     <script>
@@ -55,6 +59,10 @@
             noButton.style.left = `${randomX}px`;
             noButton.style.top = `${randomY}px`;
         });
+
+
+
+        
     </script>
 </body>
 </html>
